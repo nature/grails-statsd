@@ -20,11 +20,12 @@ grails.project.dependency.resolution = {
     dependencies {
         test 'org.gmock:gmock:0.8.0'
         test 'org.hamcrest:hamcrest-library:1.1' // Optionally, you can use hamcrest matchers
+        runtime "commons-pool:commons-pool:1.6"
     }
 
     plugins {
-        build ":release:2.2.1"
-        build(":tomcat:$grailsVersion") {
+        build(":release:3.0.1",
+                ":rest-client-builder:1.0.3") {
             export = false
         }
     }
