@@ -21,6 +21,7 @@ grails.project.dependency.resolution = {
         test 'org.gmock:gmock:0.8.0'
         test 'org.hamcrest:hamcrest-library:1.1' // Optionally, you can use hamcrest matchers
         runtime "commons-pool:commons-pool:1.6"
+        build 'commons-io:commons-io:2.4'
     }
 
     plugins {
